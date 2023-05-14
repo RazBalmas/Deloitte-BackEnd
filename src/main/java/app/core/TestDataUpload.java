@@ -17,7 +17,7 @@ public class TestDataUpload implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		for (int i = 0; i < 30; i++) {
+		for (int i = 0; i < 100; i++) {
 			int random = (int)(Math.random()*2);
 			switch (random) {
 			case 0 :

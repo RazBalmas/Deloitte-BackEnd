@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -30,19 +31,10 @@ public class EmployeeController {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
 		}
 		}
-	@GetMapping("/getEmployeesByString")
-	public List<Employee> getEmployeesByString(String input) {
+	@GetMapping("/search")
+	public List<Employee> search(@RequestParam String input) {
 		try {
-			 return employeeService.getEmployeeByString(input);
-		}
-		catch (Exception e) {
-			throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
-		}
-	}
-	@GetMapping("/passiveSearch")
-	public List<Employee> passiveSearch(String input) {
-		try {
-			return employeeService.passiveSearch(input);
+			return employeeService.search(input);
 		}
 		catch (Exception e) {
 			throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());

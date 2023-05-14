@@ -22,7 +22,7 @@ public class EmployeeService {
 		return employeeRepo.findAll();
 	}
 	
-	public List<Employee> passiveSearch(String input) {
+	public List<Employee> search(String input) {
 		System.out.println("======================");
 		System.out.println(input);
 		List<Employee> allEmployee = employeeRepo.findAll();
@@ -36,19 +36,6 @@ public class EmployeeService {
 		}
 		return employeesBySearch;
 	}
-	public List<Employee> getEmployeeByString(String input) {
-	List<Employee> allEmployee = employeeRepo.findAll();
-	List<Employee> employeesBySearch = new ArrayList<>();
-		
-	for(Employee employee : allEmployee) {
-		if(employee.getJob().toLowerCase().contains(input.toLowerCase()) ||
-				employee.getName().toLowerCase().contains(input.toLowerCase())) {
-			employeesBySearch.add(employee);
-		}
-	}
-		return employeesBySearch;
-	}
-	
 	
 	public Employee addEmployee(Employee employee) {
 		

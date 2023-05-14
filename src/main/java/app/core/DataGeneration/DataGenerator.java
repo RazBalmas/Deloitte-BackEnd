@@ -10,18 +10,21 @@ import app.core.entity.Employee;
 public class DataGenerator {
 
 	public DataGenerator() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public enum LastNames {
-		Cohen, Levi, Merdock, Swaly, Wretch, Shlomo, Stewart, Kennedy, Lazzar, Po, Shwartz, Lenon, Tamiri, Halaby;
+		Cohen, Levi, Merdock, Swaly, Wretch, Shlomo, Stewart, Kennedy, Lazzar, Po, Shwartz, Lenon, Tamiri, Halaby,
+		Moshe, Bidani, Mekonen, Shoore, Sapirov, Tal, Nagadi, Itzkovitch, Hoor, Shemtov, Semion, Zaliha, Ford;
 	}
 
 	public enum firstMaleNames {
-		Dani, Raz, Din, Ahron, Bob, Queency, Mark, Jhon, Amnon, Kieth, Robert, Tom, Harvey;
+		Dani, Raz, Din, Ahron, Bob, Queency, Mark, Jhon, Amnon, Kieth, Robert, Tom, Harvey, Gaby, Gabay, Benny, Kodi, Eliyaho, 
+		Yaniv, Jacob, Zack, Roman, Asmamo, Forrest, Inbar, Or, Guy, Shay, Shir, Idan, Avishy, Dudu;
 	}
 	public enum firstFemaleNames {
-		Ruthi, Tamara, Dana, Sally, Barbra, Yahel, Shoshana, Batya, Koral, Kelly, Riky, Rachel, Hanna;
+		Ruthi, Tamara, Dana, Sally, Barbra, Yahel, Shoshana, Batya, Koral, Kelly, Riky, Rachel, Hanna, Nofar, Shani, Yael, Kiara, 
+		Noa, Nitzan, Shlomit, Femona, Leona, Alona , Edit, Lea, Sahar, Shayli, Tami, Shula, Ziva;
 	}
 
 	public enum jobs {
